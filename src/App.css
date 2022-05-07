@@ -1,38 +1,86 @@
-.App {
+.App{
+  background-color: rgb(207, 83, 180);
+}
+
+.Price-charts{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(340px,1fr));
+  grid-gap: 1rem;
+  gap: 1rem;
+  justify-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px
+}
+
+.charts{
+  display: block;
+
+  border-radius: 20px;
+  width: 80%;
+  background-color: whitesmoke;
+}
+
+h5{
+  font-weight: bold;
+  color: lightgrey;
+}
+
+.head{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.price{
+  display: inline;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.services{
+  margin-left: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+hr{
+  width: 90%;
+}
+
+.mute{
+  opacity: 0.7;
+}
+
+button{
+  width: 95%;
+  margin: 10px 10px;
+  padding: 20px 20px;
+  border-radius: 50px;
+  background-color: rgb(174, 43, 179);
+  opacity: 0.5;
+  font-weight: bold;
   color: white;
+  border: 0ch
 }
 
-.App-link {
-  color: #61dafb;
+.charts:hover{
+
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.charts:hover button{
+  opacity: 1;
+}
+
+button:hover{
+  opacity: 2;
+  background-color: blue;
+}
+
+
+footer{
+  font-size: 30px;
+  font-weight: bold;
+  position: sticky;
+  bottom: 0;
+  text-align: center;
+  background-color: lightpink;
 }
