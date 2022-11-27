@@ -47,7 +47,6 @@ function App() {
     <div className="App">
       <div className='Price-charts'>
       {Chart.map(data => <List charts={data}/> )}</div> 
-      <footer>Created By Nishant</footer>
     </div>
     
   );
@@ -73,6 +72,7 @@ function List({charts}){
   charts.sup.includes("✖")? styles2.opacity = 0.5 : styles2.opacity = 1
   charts.dom.includes("✖")? styles3.opacity = 0.5 : styles3.opacity = 1
   charts.stat.includes("✖")? styles4.opacity = 0.5 : styles4.opacity = 1
+  
   return  (
      <div className='charts'>
        <div className='head'>
@@ -90,7 +90,7 @@ function List({charts}){
        <p style={styles3}>{charts.dom}</p>
        <p style={styles4}>{charts.stat}</p>
      </div>
-     <button>BUTTON</button>
+     <button>BUY</button>
      </div>
   );
  }
