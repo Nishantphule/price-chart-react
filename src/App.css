@@ -1,5 +1,6 @@
 .App{
   background-color: rgb(230, 120, 206);
+  height: 100vh;
 }
 
 .Price-charts{
@@ -73,4 +74,5 @@ button{
 button:hover{
   opacity: 2;
   background-color: rgb(81, 81, 233);
+  cursor: pointer;
 }
