@@ -1,6 +1,6 @@
 .App{
   background-color: rgb(230, 120, 206);
-  height: 100vh;
+  height: min-content;
 }
 
 .Price-charts{
