@@ -76,19 +76,19 @@ function List({charts}){
   return  (
      <div className='charts'>
        <div className='head'>
-       <h5>{charts.plan}</h5>
-        <h1 className='price'>{charts.price}</h1><p className='price'>{charts.period}</p>
+       <h4>{charts.plan}</h4>
+        <h1 className='price'>{charts.price}</h1><small className='price'>{charts.period}</small>
      </div>
      <hr></hr>
      <div className='services'>
-       <p>{charts.user}</p>
-       <p>{charts.storage}</p>
-       <p>{charts.pub}</p>
-       <p >{charts.com}</p>
-       <p style={styles1}>{charts.priv}</p>
-       <p style={styles2}>{charts.sup}</p>
-       <p style={styles3}>{charts.dom}</p>
-       <p style={styles4}>{charts.stat}</p>
+       <h3>{charts.user}</h3>
+       <h3>{charts.storage}</h3>
+       <h3>{charts.pub}</h3>
+       <h3 >{charts.com}</h3>
+       <h3 style={styles1}>{charts.priv}</h3>
+       <h3 style={styles2}>{charts.sup}</h3>
+       <h3 style={styles3}>{charts.dom}</h3>
+       <h3 style={styles4}>{charts.stat}</h3>
      </div>
      <button>BUY</button>
      </div>
